@@ -1,0 +1,518 @@
+:root {
+    ---- Almost White: hsl(0, 0%, 98%);
+    ---- Medium Gray: hsl(0, 0%, 41%);
+    ---- Almost Black: hsl(0, 0%, 8%);
+  }
+  
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body,main,div,h1, p,{
+    margin: 0;
+    padding: 0;
+  }
+  
+  html:focus-within {
+      scroll-behavior: smooth;
+    }
+    
+    img,
+    picture {
+      max-width: 100%;
+      display: block;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  
+    ul[role="list"],
+    ol[role="list"] {
+    list-style: none;
+  }
+      
+    @media (prefers-reduced-motion: reduce) {
+      html:focus-within {
+       scroll-behavior: auto;
+      } 
+    
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  
+    link[rel="icon"] {
+      /* Set the desired width and height */
+      width: 50px; /* Adjust to your preferred size */
+      height: 50px; /* Adjust to your preferred size */
+    }
+
+    body {
+      font-family: 'Francois One', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .mobile-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: black;
+      padding: 20px;
+      
+  }
+  
+  .menu-toggle {
+     
+      cursor: pointer;
+  }
+  
+  .menu-links {
+      display: flex;
+  }
+  
+  .menu-links:hover {
+   color:  hsl(0, 0%, 8%);
+  }
+  
+  .login-register {
+      text-align: center;
+  }
+  
+    .btn { 
+    padding: 13px;
+    width: 120px;
+    font-size: 13px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    font-family: 'Epilogue', sans-serif;
+  }
+     
+  
+  @media (max-width: 768px) {
+      header{
+          display: flex;
+          justify-content: space-between;
+          background-color: rgb(92, 84, 112)
+      }
+
+      .logo {
+        height: 160px;
+      }
+  
+      .Vantistax_logo, .footerlogo_svg {
+        height: 200px;
+        margin-top: -41px;
+      }
+
+      .established-class {
+        margin-top: -40px;
+        margin-left: 35px;
+      }
+      
+  
+      picture {
+        margin-left: 15px;
+        margin-top: 30px;
+      }
+
+      .mobile-menu {
+        border: 2px solid rgb(14, 13, 13);
+        margin-top: 45px;
+        margin-bottom: 49px;
+        margin-right: 30px;
+        border-radius: 10px;
+      }
+
+      .HamburgerMenu {
+        display: block; /* Display the HamburgerMenu initially */
+        color:  white;
+      }
+  
+      .menu-toggle .Closing_Menu {
+        display: none; /* Hide the Closing_Menu initially */ 
+      }
+  
+      .Closing_Menu {
+        position: absolute; /* Position it absolutely within menu-links */
+        top: 16px; /* Adjust the top position as needed */
+        right: 22px; /* Adjust the right position as needed */
+        z-index: 2;
+      }
+  
+     
+  
+      .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        width: 100%;
+        background-color: hsl(0, 0%, 98%);
+        z-index: 1;
+        height: 339%;
+        padding: 30px;
+        line-height: 25px;
+        padding-top: 70px;
+        
+    }
+  
+    .toggle-icon {
+      margin: 10px;
+    }
+  
+    li {
+      display: flex;
+      gap: 15px;
+      height: 20px;
+  
+    }
+  
+    .hero {
+      margin: 35px;
+    }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        background-image: url(Images/an-owner-operator-stands-by-his-truck-preparing-to-open-the-door-min.jpg);
+        background-size: cover;
+        padding: 40px;
+        
+      }
+      
+      .toggle-content {
+        list-style: none;
+        display: none;
+      }
+  
+      .toggle-content_2 {
+        display: none;
+      }
+  
+      .menu-links a {
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        margin: 5px 0;
+        display: flex;
+    }
+  
+  
+      .Content {
+        text-align: center;
+        padding: 20px;
+      }
+  
+      p {
+        color: rgb(241, 237, 237);
+      }
+  
+      picture {
+        order: -1;
+      }
+  
+      .logo_svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: 30px;
+      margin-right: 30px;
+      }
+  
+     
+    footer{
+      background-color: rgb(92, 84, 112)
+    }
+
+    .footer-content {
+      display: flex;
+    }
+
+    .footer-links {
+      margin-top: 30px;
+    margin-left: 60px;
+    }
+
+    .footer-info {
+      padding: 40px;
+      margin-top: -35px;
+    }
+  }
+  
+  @media (min-width: 769px) {
+   body {
+    background-color: hsl(0, 0%, 98%);;
+   }
+   
+    header {
+      display: flex;
+      padding: 10px;
+    }
+  
+    main {
+      display: grid;
+      grid-template-columns: 52% 50%;
+      grid-template-areas:
+          "Content picture"
+          "logo_svg picture";
+      padding: 2em;
+    }
+  
+    .Content {
+      grid-area: Content;
+    }
+  
+    h1 {
+      font-size: 3em;
+      margin-right: 11rem;
+      margin-left: 1rem;
+    }
+  
+    p {
+      margin-right: 6rem;
+      padding: 1rem;
+      line-height: 22px;
+      color: white;
+  
+    }
+  
+    picture {
+      grid-area: picture;
+    }
+  
+    .logo_svg {
+      grid-area: logo_svg;
+    }
+  
+    .Snap_logo {
+      margin-top: 30px;
+      margin-left: 1em;
+    }
+  
+    .menu-toggle {
+      display: none;
+    }
+  
+    .toggle-content {
+      display: none;
+      left: 114px;
+      padding: 20px;
+      
+    }
+  
+    .toggle-content_2 {
+      display: none;
+      margin-left: 20px;
+      width: 75px;
+      padding: 15px;
+      line-height: 25px;
+    }
+  
+    .Todo_li, .Calender_li, 
+    .Reminder_li, .Planning_li {
+      display: flex;
+      gap: 5px;
+      line-height: 25px;
+    }
+  
+    .Todo_svg, .Calender_svg, 
+    .Reminder_svg, .Planning_svg {
+      height: 20px;
+    }
+  
+    .toggle-content,
+    .toggle-content_2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    color: hsl(0, 0%, 41%);
+    border-radius: 8px;
+    box-shadow: 0 1rem 3rem -0.5rem hsl(0, 0%, 41%);
+    /* Add background color or other styling as needed */
+    /* Add other styling properties */
+  }
+  
+    .menu-links.menu-active {
+      display: flex;
+      gap: 10px;
+      margin-left: 3rem;
+      margin-top: 1em;
+    }
+   
+    .btn {
+      margin-left: 1em;
+    }
+  
+    .login-register {
+      margin-left: 23em;
+    }
+  
+    .Menu-btn {
+      padding: 13px;
+      width: 100px;
+      font-size: 13px;
+      border-radius: 15px;
+      color: hsl(0, 0%, 41%);
+      background-color: hsl(0, 0%, 98%);
+      border: 2px solid hsl(0, 0%, 41%);
+      font-family: 'Epilogue', sans-serif;
+    }
+  
+    .logo_svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 21rem;
+      margin-right: 10rem;
+  }
+      
+  
+      .client-databiz, .client-audiophile, 
+      .client-meet, .client-maker {
+        width: 70px;
+      }
+  }
+  
+  @media (min-width: 1250px) {
+    body {
+     background-color: hsl(0, 0%, 98%);;
+    }
+    
+     header {
+       display: flex;
+       padding: 10px;
+     }
+   
+     main {
+       display: grid;
+       grid-template-columns: 52% 50%;
+       grid-template-areas:
+           "Content picture"
+           "logo_svg picture";
+       padding: 2em;
+     }
+   
+     .Content {
+       grid-area: Content;
+       margin-top: 5rem;
+     }
+  
+     .toggle-content,
+    .toggle-content_2 {
+    display: none;
+    position: absolute;
+    background-color: white; /* Add background color or other styling as needed */
+    /* Add other styling properties */
+  }
+   
+     h1 {
+      font-size: 3em;
+      margin-right: 10rem;
+      margin-left: 7rem;
+     }
+   
+     p {
+      margin-right: 6rem;
+      padding-left: 1rem;
+      line-height: 22px;
+      color: hsl(0, 0%, 41%);
+      margin-left: 6rem;
+   
+     }
+   
+     picture {
+       grid-area: picture;
+       padding-right: 100px;
+     }
+   
+     .logo_svg {
+       grid-area: logo_svg;
+     }
+   
+     .Snap_logo {
+       margin-top: 30px;
+       margin-left: 1em;
+     }
+   
+     .menu-toggle {
+       display: none;
+     }
+   
+     .toggle-content {
+       display: none;
+     }
+   
+     .toggle-content_2 {
+       display: none;
+     }
+  
+     .Todo_svg, .Calender_svg, 
+     .Reminder_svg, .Planning_svg {
+       height: 20px;
+     }
+   
+     .menu-links.menu-active {
+       display: flex;
+       gap: 10px;
+       margin-left: 3rem;
+       margin-top: 1em;
+     }
+    
+     .btn {
+      margin-left: 8em;
+     }
+   
+     .login-register {
+      margin-left: 40em;
+     }
+   
+     .Menu-btn {
+       padding: 13px;
+       width: 100px;
+       margin-top: -1em;
+       font-size: 13px;
+       border-radius: 15px;
+       color: hsl(0, 0%, 41%);
+       background-color: hsl(0, 0%, 98%);
+       border: 2px solid hsl(0, 0%, 41%);
+       font-family: 'Epilogue', sans-serif;
+     }
+   
+     .logo_svg {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 25px;
+       padding-left: 54px;
+      padding-right: 52px;
+      margin-top: 12rem;
+      margin-right: 11rem
+   }
+       
+   
+       .client-databiz, .client-audiophile, 
+       .client-meet, .client-maker {
+         width: 70px;
+       }
+   }
+   
+   
+  
+  
