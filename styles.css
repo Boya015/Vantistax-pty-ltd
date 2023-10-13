@@ -1,7 +1,5 @@
 :root {
-    ---- Almost White: hsl(0, 0%, 98%);
-    ---- Medium Gray: hsl(0, 0%, 41%);
-    ---- Almost Black: hsl(0, 0%, 8%);
+    ---- background-color: rgb(92, 84, 112);
   }
   
   *::before,
@@ -102,7 +100,7 @@
       header{
           display: flex;
           justify-content: space-between;
-          background-color: rgb(92, 84, 112)
+          background-color: rgb(92, 84, 112);
       }
 
       .logo {
@@ -260,134 +258,53 @@
     header {
       display: flex;
       padding: 10px;
+      background-color: rgb(92, 84, 112)
     }
+
+    .established-class {
+      margin-top: -40px;
+      margin-left: 35px;
+      color:  rgb(241, 237, 237);
+    }
+  
   
     main {
-      display: grid;
-      grid-template-columns: 52% 50%;
-      grid-template-areas:
-          "Content picture"
-          "logo_svg picture";
+  
       padding: 2em;
+      background-image: url(Images/an-owner-operator-stands-by-his-truck-preparing-to-open-the-door-min.jpg);
+      background-size: cover;
     }
-  
-    .Content {
-      grid-area: Content;
-    }
-  
-    h1 {
-      font-size: 3em;
-      margin-right: 11rem;
-      margin-left: 1rem;
-    }
-  
-    p {
-      margin-right: 6rem;
-      padding: 1rem;
-      line-height: 22px;
-      color: white;
-  
-    }
-  
-    picture {
-      grid-area: picture;
-    }
-  
-    .logo_svg {
-      grid-area: logo_svg;
-    }
-  
-    .Snap_logo {
-      margin-top: 30px;
-      margin-left: 1em;
-    }
-  
-    .menu-toggle {
+
+    .HamburgerMenu, .Closing_Menu {
       display: none;
     }
-  
-    .toggle-content {
-      display: none;
-      left: 114px;
-      padding: 20px;
+
+
+
+    h3 {
+      margin-left: 7rem;
+    }
+
+    .Vantistax_logo, .footerlogo_svg {
+      height: 200px;
+      margin-top: -41px;
+    }
+
+    ul {
+     display: flex;
+     gap: 3rem;
+     list-style: none;
+    }
+    footer {
       
+      background-color: rgb(92, 84, 112);
+      padding-bottom: 2rem;
     }
-  
-    .toggle-content_2 {
-      display: none;
-      margin-left: 20px;
-      width: 75px;
-      padding: 15px;
-      line-height: 25px;
-    }
-  
-    .Todo_li, .Calender_li, 
-    .Reminder_li, .Planning_li {
+
+    .footer-content {
       display: flex;
-      gap: 5px;
-      line-height: 25px;
     }
-  
-    .Todo_svg, .Calender_svg, 
-    .Reminder_svg, .Planning_svg {
-      height: 20px;
-    }
-  
-    .toggle-content,
-    .toggle-content_2 {
-    display: none;
-    position: absolute;
-    background-color: white;
-    list-style: none;
-    color: hsl(0, 0%, 41%);
-    border-radius: 8px;
-    box-shadow: 0 1rem 3rem -0.5rem hsl(0, 0%, 41%);
-    /* Add background color or other styling as needed */
-    /* Add other styling properties */
-  }
-  
-    .menu-links.menu-active {
-      display: flex;
-      gap: 10px;
-      margin-left: 3rem;
-      margin-top: 1em;
-    }
-   
-    .btn {
-      margin-left: 1em;
-    }
-  
-    .login-register {
-      margin-left: 23em;
-    }
-  
-    .Menu-btn {
-      padding: 13px;
-      width: 100px;
-      font-size: 13px;
-      border-radius: 15px;
-      color: hsl(0, 0%, 41%);
-      background-color: hsl(0, 0%, 98%);
-      border: 2px solid hsl(0, 0%, 41%);
-      font-family: 'Epilogue', sans-serif;
-    }
-  
-    .logo_svg {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 25px;
-      padding-left: 50px;
-      padding-right: 50px;
-      margin-top: 21rem;
-      margin-right: 10rem;
-  }
-      
-  
-      .client-databiz, .client-audiophile, 
-      .client-meet, .client-maker {
-        width: 70px;
-      }
+    
   }
   
   @media (min-width: 1250px) {
@@ -403,28 +320,23 @@
      main {
        display: grid;
        grid-template-columns: 52% 50%;
-       grid-template-areas:
-           "Content picture"
-           "logo_svg picture";
-       padding: 2em;
      }
    
-     .Content {
-       grid-area: Content;
-       margin-top: 5rem;
-     }
-  
-     .toggle-content,
-    .toggle-content_2 {
-    display: none;
-    position: absolute;
-    background-color: white; /* Add background color or other styling as needed */
-    /* Add other styling properties */
+     .established-class {
+      margin-top: -40px;
+      margin-left: 21px;
+      color: rgb(241, 237, 237);
   }
+  
+    
    
      h1 {
       font-size: 3em;
       margin-right: 10rem;
+      margin-left: 7rem;
+     }
+
+     h3 {
       margin-left: 7rem;
      }
    
@@ -432,85 +344,21 @@
       margin-right: 6rem;
       padding-left: 1rem;
       line-height: 22px;
-      color: hsl(0, 0%, 41%);
+      color: white;
       margin-left: 6rem;
    
      }
-   
-     picture {
-       grid-area: picture;
-       padding-right: 100px;
+
+     footer {
+      display: flex;
+     }
+
+     ul {
+      margin-top: 4rem;
+      margin-left: 40rem;
      }
    
-     .logo_svg {
-       grid-area: logo_svg;
-     }
-   
-     .Snap_logo {
-       margin-top: 30px;
-       margin-left: 1em;
-     }
-   
-     .menu-toggle {
-       display: none;
-     }
-   
-     .toggle-content {
-       display: none;
-     }
-   
-     .toggle-content_2 {
-       display: none;
-     }
-  
-     .Todo_svg, .Calender_svg, 
-     .Reminder_svg, .Planning_svg {
-       height: 20px;
-     }
-   
-     .menu-links.menu-active {
-       display: flex;
-       gap: 10px;
-       margin-left: 3rem;
-       margin-top: 1em;
-     }
-    
-     .btn {
-      margin-left: 8em;
-     }
-   
-     .login-register {
-      margin-left: 40em;
-     }
-   
-     .Menu-btn {
-       padding: 13px;
-       width: 100px;
-       margin-top: -1em;
-       font-size: 13px;
-       border-radius: 15px;
-       color: hsl(0, 0%, 41%);
-       background-color: hsl(0, 0%, 98%);
-       border: 2px solid hsl(0, 0%, 41%);
-       font-family: 'Epilogue', sans-serif;
-     }
-   
-     .logo_svg {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       gap: 25px;
-       padding-left: 54px;
-      padding-right: 52px;
-      margin-top: 12rem;
-      margin-right: 11rem
-   }
-       
-   
-       .client-databiz, .client-audiophile, 
-       .client-meet, .client-maker {
-         width: 70px;
-       }
+     
    }
    
    
