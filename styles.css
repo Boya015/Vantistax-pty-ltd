@@ -100,7 +100,7 @@
       header{
           display: flex;
           justify-content: space-between;
-          background-color: rgb(92, 84, 112);
+          background-color: black;
       }
 
       .logo {
@@ -124,7 +124,7 @@
       }
 
       .mobile-menu {
-        border: 2px solid rgb(14, 13, 13);
+        border: 2px solid rgb(253, 253, 253);
         margin-top: 45px;
         margin-bottom: 49px;
         margin-right: 30px;
@@ -183,8 +183,6 @@
       main {
         display: flex;
         flex-direction: column;
-        background-image: url(Images/an-owner-operator-stands-by-his-truck-preparing-to-open-the-door-min.jpg);
-        background-size: cover;
         padding: 40px;
         
       }
@@ -212,7 +210,8 @@
       }
   
       p {
-        color: rgb(241, 237, 237);
+        color: gray;
+        transition: transform 0.3s ease; /* Define a transition for the "transform" property */
       }
   
       picture {
@@ -232,7 +231,7 @@
   
      
     footer{
-      background-color: rgb(92, 84, 112)
+      background-color: black;
     }
 
     .footer-content {
@@ -258,7 +257,7 @@
     header {
       display: flex;
       padding: 10px;
-      background-color: rgb(92, 84, 112)
+      background-color: black;
     }
 
     .established-class {
@@ -269,10 +268,10 @@
   
   
     main {
-  
-      padding: 2em;
-      background-image: url(Images/an-owner-operator-stands-by-his-truck-preparing-to-open-the-door-min.jpg);
-      background-size: cover;
+      
+        display: grid;
+        grid-template-columns: 52% 50%;
+        padding: 2em;
     }
 
     .HamburgerMenu, .Closing_Menu {
@@ -281,14 +280,24 @@
 
 
 
-    h3 {
-      margin-left: 7rem;
+    h1 {
+      font-size: 3em;
     }
 
     .Vantistax_logo, .footerlogo_svg {
       height: 200px;
       margin-top: -41px;
     }
+
+    p {
+      margin-right: 6rem;
+      padding-left: 1rem;
+      line-height: 22px;
+      color: gray;
+      transition: transform 0.3s ease; /* Define a transition for the "transform" property */
+      
+   
+     }
 
     ul {
      display: flex;
@@ -297,7 +306,7 @@
     }
     footer {
       
-      background-color: rgb(92, 84, 112);
+      background-color: black;
       padding-bottom: 2rem;
     }
 
@@ -344,9 +353,14 @@
       margin-right: 6rem;
       padding-left: 1rem;
       line-height: 22px;
-      color: white;
+      color: gray;
       margin-left: 6rem;
+      transition: transform 0.3s ease; /* Define a transition for the "transform" property */
    
+     }
+
+     .mobile_pic_service {
+      margin-top: 18em;
      }
 
      footer {
