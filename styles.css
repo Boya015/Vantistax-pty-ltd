@@ -132,48 +132,70 @@
       }
 
       .HamburgerMenu {
-        display: block; /* Display the HamburgerMenu initially */
-        color:  white;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        color: aliceblue;
       }
+
+      .bar {
+        width: 30px;
+        height: 2px;
+        background-color: #ffffff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
   
       .menu-toggle .Closing_Menu {
         display: none; /* Hide the Closing_Menu initially */ 
       }
+
+      .mobile-menu.active {
+        border-color: black;
+    }
+    .Closing_Menu.active {
+        background-color: black;
+    }
   
       .Closing_Menu {
-        position: absolute; /* Position it absolutely within menu-links */
-        top: 16px; /* Adjust the top position as needed */
-        right: 22px; /* Adjust the right position as needed */
+       
         z-index: 2;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
       }
-  
-     
+    
+    .bar.bar1 {
+        transform: rotate(45deg) translate(1px, 1px);
+    }
+    
+    .bar.bar2 {
+        transform: rotate(-42deg) translate(3px, -5px);
+    }
   
       .menu-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 100px;
-        width: 100%;
-        background-color: hsl(0, 0%, 98%);
-        z-index: 1;
-        height: 339%;
-        padding: 30px;
-        line-height: 25px;
-        padding-top: 70px;
-        
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      left: 100px;
+      width: 58%;
+      background-color: rgb(255, 255, 255);
+      z-index: 1;
+      height: 100%;
+      padding: 30px;
+      line-height: 30px;
+      padding-top: 70px;
     }
   
-    .toggle-icon {
-      margin: 10px;
-    }
+   
   
     li {
       display: flex;
       gap: 15px;
-      height: 20px;
-  
+      font-size: 1em;
     }
   
     .hero {
@@ -187,20 +209,13 @@
         
       }
       
-      .toggle-content {
-        list-style: none;
-        display: none;
-      }
-  
-      .toggle-content_2 {
-        display: none;
-      }
-  
+
       .menu-links a {
         text-decoration: none;
-        color: hsl(0, 0%, 41%);
-        margin: 5px 0;
+        color: black;
+        margin: 6px 20px;
         display: flex;
+        margin-left: 1px;
     }
   
   
