@@ -156,6 +156,12 @@
     }
     .Closing_Menu.active {
         background-color: black;
+        display: block;
+        position: absolute;
+        left: 17em;
+        top: 3em;
+       padding: 21px;
+       border-radius: 8px;
     }
   
       .Closing_Menu {
